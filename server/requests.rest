@@ -1,0 +1,34 @@
+GET http://localhost:3001/todos
+
+###
+
+GET http://localhost:3001/todos/65000f0d7dad66488ae9dce5
+
+###
+
+POST http://localhost:3001/todos/create 
+Content-Type: application/json
+
+{
+    "text" : "boom 7"
+}
+
+
+###
+
+DELETE http://localhost:3001/todos/delete/
+
+
+###
+
+PUT http://localhost:3001/todos/update/65001191fce9fd08782d2391
+
+
+###
+
+PUT http://localhost:3001/todos/edit/65001191fce9fd08782d2391
+Content-Type: application/json
+
+{
+    "text" : "the second todo is also back !"
+}
